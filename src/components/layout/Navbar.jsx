@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -33,9 +34,9 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled glass-panel' : ''}`}>
             <div className="nav-content">
-                <a href="/" className="logo">
+                <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
                     KM<span className="logo-dot">.</span>
-                </a>
+                </Link>
 
                 {/* Desktop Nav */}
                 <div className="nav-links desktop-only">
@@ -48,7 +49,7 @@ const Navbar = () => {
                             {link.name}
                         </button>
                     ))}
-                    <a href="/api/resume" className="resume-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="#" className="resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
                         Resume
                     </a>
                 </div>
@@ -73,7 +74,7 @@ const Navbar = () => {
                         {link.name}
                     </button>
                 ))}
-                <a href="/api/resume" className="mobile-resume-btn">
+                <a href="#" className="mobile-resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
                     Resume
                 </a>
             </div>
