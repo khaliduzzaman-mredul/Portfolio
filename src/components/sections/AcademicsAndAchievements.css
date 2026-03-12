@@ -1,0 +1,262 @@
+.acad-achiev-section {
+    position: relative;
+}
+
+.acad-achiev-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+/* =========================================
+   Left Column: Academics & Extracurriculars
+   ========================================= */
+.academics-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.academic-card {
+    padding: 1.5rem;
+    transition: transform var(--transition-normal);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.academic-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(0, 240, 255, 0.3);
+}
+
+.acad-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    color: var(--accent-cyan);
+}
+
+.acad-header h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+.acad-university {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.acad-details-container {
+    margin-bottom: 1.2rem;
+}
+
+.acad-details-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acad-details-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.acad-details-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+}
+
+.acad-detail-label {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.acad-detail-value {
+    color: var(--text-secondary);
+}
+
+.acad-award {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #fbbf24;
+    /* Gold */
+    background: rgba(251, 191, 36, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.extracurricular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.extra-card {
+    padding: 1.2rem;
+    transition: transform var(--transition-normal);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.extra-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(138, 43, 226, 0.3);
+}
+
+.extra-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-purple);
+}
+
+.extra-header h4 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.extra-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.extra-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.extra-role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: flex-start;
+}
+
+.extra-role-title {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.extra-role-title::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+}
+
+.extra-role-date {
+    color: var(--accent-cyan);
+    font-size: 0.85rem;
+    padding-left: 1rem;
+}
+
+
+/* =========================================
+   Right Column: Achievements
+   ========================================= */
+.achievements-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    display: flex;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgba(138, 43, 226, 0.3);
+}
+
+.ach-accent {
+    width: 6px;
+    background: linear-gradient(180deg, var(--accent-cyan), var(--accent-purple));
+}
+
+.ach-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.ach-content h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.ach-event {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.ach-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ach-details li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.ach-details li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+}
+
+.ach-details li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Scaling */
+@media (max-width: 992px) {
+    .acad-achiev-container {
+        grid-template-columns: 1fr;
+    }
+}
