@@ -17,8 +17,12 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="hero-text-container"
                 >
-                    <span className="hero-greeting">Hi, I'm</span>
-                    <h1 className="hero-name">Khaliduzzaman Mredul</h1>
+                    <div className="hero-name-box">
+                        <span className="hero-greeting">HI, I'M</span>
+                        <h1 className="hero-name">
+                            KHALIDUZZAMAN<br />MREDUL
+                        </h1>
+                    </div>
                     <h2 className="hero-title">
                         <span className="gradient-text">AI/ML || Computer Vision || NLP || Robotics || IoT</span>
                     </h2>
