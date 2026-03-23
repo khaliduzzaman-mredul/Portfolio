@@ -207,8 +207,12 @@
 .ring {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--ring-base-color, rgba(255, 255, 255, 0.1));
     animation: spin linear infinite;
+}
+
+[data-theme="light"] .ring {
+    --ring-base-color: rgba(0, 0, 0, 0.15);
 }
 
 .ring-1 {
