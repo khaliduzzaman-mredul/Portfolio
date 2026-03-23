@@ -1,10 +1,10 @@
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     position: relative;
     overflow: hidden;
-    padding: 6rem 2rem 0 2rem;
+    padding: 11.5rem 2rem 0 2rem;
 }
 
 .hero-bg-glow {
@@ -193,6 +193,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
 }
 
 .abstract-shape {
