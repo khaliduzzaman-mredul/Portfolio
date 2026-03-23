@@ -74,6 +74,7 @@ button {
 
 .main-content {
   flex-grow: 1;
+  padding-top: 6rem;
 }
 
 /* Base Components styling that will be reused */
