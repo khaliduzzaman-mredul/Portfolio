@@ -4,24 +4,24 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', subject: '', message: '' });
     const [status, setStatus] = useState({ submitting: false, success: false, error: null });
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus({ submitting: true, success: false, error: null });
 
-        // Simulate network request without a backend
-        setTimeout(() => {
-            setStatus({ submitting: false, success: true, error: null });
-            setFormData({ name: '', email: '', message: '' });
-            // Reset success message after 5 seconds
-            setTimeout(() => setStatus(s => ({ ...s, success: false })), 5000);
-        }, 1500); // 1.5 second delay to show "Sending..." state
+        const encodedSubject = encodeURIComponent(formData.subject);
+        const encodedBody = encodeURIComponent(`${formData.message}\n\nFrom\n${formData.name}`);
+        
+        window.location.href = `mailto:khaliduzzaman.medul@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+
+        setStatus({ submitting: false, success: false, error: null });
+        setFormData({ name: '', subject: '', message: '' });
     };
 
     return (
@@ -92,15 +92,15 @@ const Contact = () => {
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="subject">Subject</label>
                                 <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    value={formData.subject}
                                     onChange={handleChange}
                                     required
-                                    placeholder="john@example.com"
+                                    placeholder="Connecting regarding..."
                                 />
                             </div>
 
@@ -112,7 +112,7 @@ const Contact = () => {
                                     value={formData.message}
                                     onChange={handleChange}
                                     required
-                                    rows="5"
+                                    rows={5}
                                     placeholder="Hello, I'd like to talk about..."
                                 ></textarea>
                             </div>
@@ -127,11 +127,6 @@ const Contact = () => {
                                 )}
                             </button>
 
-                            {status.success && (
-                                <div className="form-status success">
-                                    Message sent successfully!
-                                </div>
-                            )}
                             {status.error && (
                                 <div className="form-status error">
                                     {status.error}

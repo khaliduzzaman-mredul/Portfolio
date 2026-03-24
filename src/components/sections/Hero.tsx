@@ -39,7 +39,7 @@ const Hero = () => {
                             <a href="https://linkedin.com/in/khaliduzzaman-mredulb5ab93225" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <Linkedin size={24} />
                             </a>
-                            <a href="mailto:khaliduzzaman.medul@gmail.com" className="social-icon">
+                            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="social-icon">
                                 <Mail size={24} />
                             </a>
                         </div>
