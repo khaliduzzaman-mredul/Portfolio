@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, ExternalLink, GraduationCap, Award, Users } from 'lucide-react';
+import { Trophy, ExternalLink, GraduationCap, Award, Users, Medal, Globe } from 'lucide-react';
 import './AcademicsAndAchievements.css';
 
 const AcademicsAndAchievements = () => {
     interface Achievement {
         title: string;
+        icon: React.ReactNode;
         event?: string;
         details?: (string | React.ReactNode)[];
         subEvents?: {
@@ -19,11 +20,13 @@ const AcademicsAndAchievements = () => {
     const achievements: Achievement[] = [
         {
             title: "National Champion",
+            icon: <Trophy size={20} style={{ color: 'var(--accent-cyan)' }} />,
             event: "30 lbs. Feather Weight RoboWar",
             details: ["Bit Arena, NSU – 2022", "INIT_3.0, IUB – 2023", "Technocrats_v1, IUBAT – 2023", "MechaFest, BUET – 2024"]
         },
         {
             title: "National Runner-up",
+            icon: <Medal size={20} style={{ color: 'var(--accent-cyan)' }} />,
             event: "30 lbs. Feather Weight RoboWar",
             details: ["TechFest, IIT Bombay Zonal – 2022", "Technoxian_8.0, Delhi Zonal – 2024"],
             subEvents: [
@@ -34,7 +37,8 @@ const AcademicsAndAchievements = () => {
             ]
         },
         {
-            title: "Global Recognitions",
+            title: "Global Events",
+            icon: <Globe size={20} style={{ color: 'var(--accent-cyan)' }} />,
             subEvents: [
                 {
                     event: "National Havoc Robot League (NHRL)",
@@ -163,7 +167,8 @@ const AcademicsAndAchievements = () => {
                                 >
                                     <div className="ach-accent"></div>
                                     <div className="ach-content">
-                                        <h4>
+                                        <h4 style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                                            {ach.icon}
                                             {ach.title}
                                             {ach.link && (
                                                 <a href={ach.link} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '10px', color: 'var(--accent-cyan)' }}>
