@@ -45,7 +45,7 @@
 }
 
 .acad-university {
-    color: var(--text-secondary);
+    color: var(--accent-cyan);
     font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -154,25 +154,24 @@
 }
 
 .extra-role-title {
-    color: var(--text-primary);
+    color: var(--accent-cyan);
     font-size: 0.95rem;
     font-weight: 500;
-    position: relative;
-    padding-left: 1rem;
     text-align: left;
 }
 
-.extra-role-title::before {
+.extra-role-date {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.extra-role-date::before {
     content: '•';
     position: absolute;
     left: 0;
     color: var(--accent-purple);
-}
-
-.extra-role-date {
-    color: var(--accent-cyan);
-    font-size: 0.85rem;
-    padding-left: 1rem;
 }
 
 
