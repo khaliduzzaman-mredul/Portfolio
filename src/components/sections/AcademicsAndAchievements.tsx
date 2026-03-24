@@ -4,7 +4,19 @@ import { Trophy, ExternalLink, GraduationCap, Award, Users } from 'lucide-react'
 import './AcademicsAndAchievements.css';
 
 const AcademicsAndAchievements = () => {
-    const achievements = [
+    interface Achievement {
+        title: string;
+        event?: string;
+        details?: (string | React.ReactNode)[];
+        subEvents?: {
+            event: string;
+            details: string[];
+        }[];
+        link?: string;
+        description?: string;
+    }
+
+    const achievements: Achievement[] = [
         {
             title: "National Champion",
             event: "30 lbs. Feather Weight RoboWar",
@@ -23,11 +35,19 @@ const AcademicsAndAchievements = () => {
         },
         {
             title: "Global Recognitions",
-            event: "International Robotics",
             details: [
-                "Top 10 Worldwide: International Rover Challenge (IRC) - India 2023",
-                "Qualified Participant: University Rover Challenge (URC) - Utah, USA 2022",
-                "Qualified Participant: NHRL - Connecticut, USA 2024, 2025"
+                <div key="nhrl" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>National Havoc Robot League (NHRL)</span>
+                    <span>Connecticut, USA - 2024, 2025</span>
+                </div>,
+                <div key="urc" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>University Rover Challenge (URC)</span>
+                    <span>Utah, USA - 2022</span>
+                </div>,
+                <div key="irc" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>International Rover Challenge (IRC)</span>
+                    <span>Karnataka, India - 2023</span>
+                </div>
             ]
         }
     ];
@@ -151,7 +171,7 @@ const AcademicsAndAchievements = () => {
                                                 </a>
                                             )}
                                         </h4>
-                                        <div className="ach-event">{ach.event}</div>
+                                        {ach.event && <div className="ach-event">{ach.event}</div>}
                                         {ach.details && ach.details.length > 0 && (
                                             <ul className="ach-details">
                                                 {ach.details.map((detail, dIdx) => (
