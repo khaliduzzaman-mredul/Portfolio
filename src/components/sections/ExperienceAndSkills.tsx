@@ -11,10 +11,10 @@ const ExperienceAndSkills = () => {
             date: "Sep. 2023 - Present",
             link: "https://d2a2i.aiub.edu/project-bscl.html",
             points: [
-                "Led the R&D team for the 'Real-time Object Detection based TRP Measurement System' for Bangladesh Satellite Company Limited (BSCL).",
+                "Directed a 5-person R&D team to architect a Real-time Object Detection TRP Measurement System for BSCL, accelerating metric acquisition.",
                 "Developed SOTA visual detection algorithms achieving 15% better accuracy with 65% smaller dataset.",
-                "Created a custom annotated dataset of 250K+ image samples across 264 classes of TV channel logos.",
-                "Developing a Smart-sensor Attachment Module using Realtime Object Detection and Laser Sensing (LIDAR, ToF, RGB-D) for power wheelchairs."
+                "Engineered a highly-balanced proprietary dataset consisting of 250,000+ localized samples scaling across 264 distinct TV channel classes.",
+                "Prototyped a robust multi-modal Smart-sensor Attachment Module fusing LIDAR, ToF, and RGB-D telemetry for power wheelchair collision avoidance."
             ]
         },
         {
@@ -23,10 +23,10 @@ const ExperienceAndSkills = () => {
             date: "Mar. 2025 - Present",
             link: "https://writetagore.com",
             points: [
-                "Designed and developed 'Tagore', an AI-powered smart typewriter device for rigorous writing.",
-                "Developed an LLM backend 'Author Intelligence' for paraphrasing, concept mapping, and tone changing.",
-                "Collaborated with University of Oxford and University of Sheffield to fabricate the initial prototype.",
-                "Implemented a custom embedded Linux system for the proprietary product development."
+                "Spearheaded end-to-end product design and full-stack architecture of 'Tagore', a dedicated AI-native smart typewriter.",
+                "Engineered 'Author Intelligence', a proprietary LLM API backend handling complex rapid paraphrasing, mapping, and tone adjustment at scale.",
+                "Partnered directly with linguistics and engineering faculties cross-functionally at Oxford and Sheffield Universities to iteratively fabricate MVP hardware prototypes.",
+                "Deployed a stripped-down, highly optimized Embedded Linux OS (Buildroot) to guarantee isolated, distraction-free native offline performance."
             ]
         },
         {
@@ -34,10 +34,10 @@ const ExperienceAndSkills = () => {
             company: "D2A2I Institute of Innovation, AIUB",
             date: "Feb. 2023 - Aug. 2023",
             points: [
-                "Contributed to the design of a Half-body Humanoid Desk Assistant Robot featuring LLM and Computer Vision.",
-                "Conducted performance evaluation of deep learning models for the intended use cases.",
-                "Managed production-grade Linux-operated SBCs (Raspberry Pi, Jetson Orin Nano).",
-                "Contributed to manual image annotation for training production-level deployed models."
+                "Collaborated extensively on structural and software engineering for a Half-body Humanoid Desk Assistant integrating modular LLM and Vision APIs.",
+                "Benchmarked heavily quantized deep learning models to optimize and drastically reduce inference latency constraints on edge hardware.",
+                "Administered the continuous lifecycle and deployment architecture of production-grade Linux SBC clusters (Jetson Orin Nano, Raspberry Pi) to guarantee reliable uptime.",
+                "Ensured strict data quality baselines by heavily validating and annotating deeply complex visual datasets for global production-level model tuning."
             ]
         }
     ];

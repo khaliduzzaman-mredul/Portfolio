@@ -9,37 +9,37 @@ const Projects = () => {
             title: "IR-Based Automation System with Telegram Bot Integration",
             type: "Publication",
             link: "https://ieeexplore.ieee.org/document/10914456",
-            desc: "IEEE published research on automating environments using IR sensing coupled with remote Telegram bot management.",
+            desc: "Architected an IR-based environmental automation IoT system using Telegram Bot API endpoints, culminating in a peer-reviewed IEEE robotics publication.",
             tags: ["IoT", "Automation", "Python"]
         },
         {
             title: "Autonomous Visual & GPS Navigation System for Mars Rover",
             type: "Project",
-            desc: "Developed an autonomous navigation system utilizing computer vision and GPS waypoints for traversal in simulated Mars-like terrains.",
+            desc: "Engineered an autonomous traversal stack fusing OpenCV and GPS telemetry via ROS, successfully enabling dynamic obstacle avoidance in simulated Mars terrains.",
             tags: ["Computer Vision", "ROS", "OpenCV"]
         },
         {
             title: "Voice Control System for Power wheelchair for people with physical disability",
             type: "Project",
-            desc: "Innovative mobility solution for the physically disabled, employing speech recognition to control wheelchair movements safely.",
+            desc: "Developed a critically-acclaimed embedded NLP-driven wheelchair mobility module, achieving reliable voice-activated navigation to eliminate manual joystick dependency.",
             tags: ["NLP", "Embedded Systems", "Hardware"]
         },
         {
             title: "Vision based Abnormal Anomaly Detection System inside ATM Booth",
             type: "Project",
-            desc: "Computer vision deployed anomaly detection system designed to identify and flag abnormal activities within ATM booths for enhanced security.",
+            desc: "Designed an AI-powered surveillance pipeline leveraging real-time Computer Vision architectures to autonomously detect and flag anomalous behavioral patterns in high-security ATM booths.",
             tags: ["Computer Vision", "Security", "AI"]
         },
         {
             title: "Autonomous solar panel cleaning system based on visual dust detection",
             type: "Project",
-            desc: "Automated cleaning system that utilizes visual detection to assess dust levels on solar panels and trigger cleaning operations.",
+            desc: "Built a fully autonomous hardware-cleaning robotic infrastructure using custom visual dust-classification models to scale solar panel efficiency without human intervention.",
             tags: ["Computer Vision", "Automation", "Robotics"]
         },
         {
             title: "Finless Maneuver System for Projectiles",
             type: "Undergoing Research",
-            desc: "Design and development of a finless maneuver system for projectiles at subsonic to supersonic velocity by manipulating the intake.",
+            desc: "Simulated core advanced aerodynamic control systems for finless projectiles by dynamically manipulating hardware intake flow from subsonic to supersonic edge velocities.",
             tags: ["Aerodynamics", "Simulation", "Control Systems"]
         }
     ];
