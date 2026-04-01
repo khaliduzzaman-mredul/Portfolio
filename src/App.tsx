@@ -8,6 +8,10 @@ function App() {
   return (
     <Router basename="/Portfolio">
       <div className="app-container">
+        {/* Global Animated Background Elements */}
+        <div className="global-bg-glow glow-1"></div>
+        <div className="global-bg-glow glow-2"></div>
+
         <Navbar />
         <main className="main-content">
           <Routes>
