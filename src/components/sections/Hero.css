@@ -441,7 +441,8 @@
     }
 
     .hero-title {
-        font-size: 1.1rem;
+        font-size: min(3.8vw, 0.95rem);
+        white-space: nowrap;
     }
 
     .hero-tags {
@@ -449,7 +450,18 @@
     }
 
     .abstract-shape {
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 330px;
     }
+
+    .planet {
+        width: 32px;
+        height: 32px;
+        font-size: 0.55rem;
+    }
+
+    .p-top { top: -16px; }
+    .p-bottom { bottom: -16px; }
+    .p-left { left: -16px; }
+    .p-right { right: -16px; }
 }
