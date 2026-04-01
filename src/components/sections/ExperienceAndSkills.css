@@ -278,4 +278,18 @@
         align-items: flex-start;
         gap: 0.5rem;
     }
+    .exp-role, .exp-company, .exp-duration {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+    .timeline-content {
+        padding: 1.2rem;
+    }
+    .cert-content {
+        padding: 1.2rem;
+    }
+    .skill-category {
+        padding: 1.2rem;
+    }
 }
