@@ -6,10 +6,6 @@ import './Hero.css';
 const Hero = () => {
     return (
         <section id="hero" className="hero-section">
-            {/* Animated Background Elements */}
-            <div className="hero-bg-glow glow-1"></div>
-            <div className="hero-bg-glow glow-2"></div>
-
             <div className="hero-content">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
