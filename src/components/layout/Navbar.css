@@ -47,6 +47,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    transform: translateY(-3px);
 }
 
 .nav-link {
@@ -130,6 +131,10 @@
     .mobile-only {
         display: block;
         color: var(--text-primary);
+    }
+
+    .mobile-menu-btn {
+        transform: translateY(-3px);
     }
 
     .mobile-menu {
