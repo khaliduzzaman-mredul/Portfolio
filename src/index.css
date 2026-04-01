@@ -120,17 +120,23 @@ button {
   --glass-border: rgba(0, 0, 0, 0.1);
 }
 
-/* Global Animated Background Elements */
-.global-bg-glow {
+/* Global Animated Background Engine */
+.global-bg-container {
     position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.global-bg-glow {
+    position: absolute;
     width: 600px;
     height: 600px;
     border-radius: 50%;
     filter: blur(120px);
-    z-index: -1;
     opacity: 0.4;
     animation: float 10s ease-in-out infinite;
-    pointer-events: none;
 }
 
 .glow-1 {

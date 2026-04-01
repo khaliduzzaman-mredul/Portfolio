@@ -8,9 +8,11 @@ function App() {
   return (
     <Router basename="/Portfolio">
       <div className="app-container">
-        {/* Global Animated Background Elements */}
-        <div className="global-bg-glow glow-1"></div>
-        <div className="global-bg-glow glow-2"></div>
+        {/* Global Animated Background Engine */}
+        <div className="global-bg-container">
+            <div className="global-bg-glow glow-1"></div>
+            <div className="global-bg-glow glow-2"></div>
+        </div>
 
         <Navbar />
         <main className="main-content">
