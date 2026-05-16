@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 .academic-card {
@@ -215,6 +215,7 @@
 .extra-col {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .achievements-col {
