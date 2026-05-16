@@ -125,8 +125,8 @@ const AcademicsAndAchievements = () => {
                                             <span className="extra-role-title">Team Captain</span>
                                             <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
                                             <ul className="extra-role-points">
-                                                <li>Orchestrated design and fabrication of a full Rocker-Bogie chassis and a 6-DOF robotic arm with ambidex LIMS-2 mechanism.</li>
-                                                <li>Implemented inverse kinematics for the manipulator to achieve precise end-effector control.</li>
+                                                <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
+                                                <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve precise end-effector control for performing tasks such as flipping small switches, plugging USB cables, and typing on a keyboard.</li>
                                                 <li>Migrated the entire rover software stack to a ROS2 architecture and validated via Gazebo and Webots simulations.</li>
                                                 <li>Upgraded the autonomous CV pipeline from ArUco markers to directional arrow detection to qualify for IRC 2023.</li>
                                             </ul>
