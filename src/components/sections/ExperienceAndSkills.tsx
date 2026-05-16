@@ -39,6 +39,18 @@ const ExperienceAndSkills = () => {
                 "Managed production-grade Linux-operated SBCs (Raspberry Pi, Jetson Orin Nano).",
                 "Contributed to manual image annotation for training production-level deployed models."
             ]
+        },
+        {
+            role: "Team Captain & Software Lead",
+            company: "AIUB Robotic Crew",
+            date: "Jan. 2022 - Aug. 2023",
+            points: [
+                "Accomplished fully autonomous Mars rover navigation for URC 2022 by fusing visual ArUco detection, RTK GNSS, and Lidar/ToF sensors within a custom ROS2 architecture.",
+                "Elevated team capabilities by transitioning from Software Lead to Team Captain, orchestrating the successful design and fabrication of a Rocker-Bogie chassis and a 6-DOF manipulator.",
+                "Achieved precise robotic arm manipulation capabilities by mathematically implementing inverse kinematics and an ambidex LIMS-2 mechanism.",
+                "Reduced physical prototyping iteration time by successfully simulating the entire rover physics and sensor stack in Gazebo and Webots environments.",
+                "Secured qualification for IRC 2023 by upgrading the autonomous computer vision pipeline from ArUco markers to robust directional arrow detection."
+            ]
         }
     ];
 
