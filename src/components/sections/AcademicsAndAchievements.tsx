@@ -126,8 +126,8 @@ const AcademicsAndAchievements = () => {
                                             <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
                                             <ul className="extra-role-points">
                                                 <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
-                                                <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve precise end-effector control for performing tasks such as flipping small switches, plugging USB cables, and typing on a keyboard.</li>
-                                                <li>Simulated the entire rover physics and sensor stack — including Visual-Inertial Odometry (VIO) and 3D reconstruction pipelines — with ROS2 in Gazebo and Webots to reduce physical prototyping iteration time and cost.</li>
+                                                <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
+                                                <li>Simulated the entire rover physics and sensor stack including Visual-Inertial Odometry and 3D reconstruction with ROS2 in Gazebo and Webots to reduce physical prototyping iteration time and cost.</li>
                                                 <li>Upgraded the real-time perception pipeline from ArUco-based marker detection to directional arrow recognition to qualify for IRC 2023.</li>
                                             </ul>
                                         </div>
