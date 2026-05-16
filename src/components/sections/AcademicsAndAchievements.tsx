@@ -127,7 +127,7 @@ const AcademicsAndAchievements = () => {
                                             <ul className="extra-role-points">
                                                 <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve precise end-effector control for performing tasks such as flipping small switches, plugging USB cables, and typing on a keyboard.</li>
-                                                <li>Migrated the entire rover software stack to a ROS2 architecture and validated via Gazebo and Webots simulations.</li>
+                                                <li>Simulated the entire rover physics and sensor stack with ROS2 in Gazebo and Webots environments to reduce physical prototyping iteration time and cost.</li>
                                                 <li>Upgraded the autonomous CV pipeline from ArUco markers to directional arrow detection to qualify for IRC 2023.</li>
                                             </ul>
                                         </div>
