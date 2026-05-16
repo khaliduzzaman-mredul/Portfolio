@@ -301,9 +301,13 @@
 }
 
 @media (max-width: 768px) {
-    .academic-card, .extra-card, .ach-content {
+
+    .academic-card,
+    .extra-card,
+    .ach-content {
         padding: 1.2rem;
     }
+
     .acad-header {
         flex-wrap: wrap;
     }

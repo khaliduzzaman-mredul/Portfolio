@@ -125,19 +125,19 @@ const AcademicsAndAchievements = () => {
                                             <span className="extra-role-title">Team Captain</span>
                                             <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
                                             <ul className="extra-role-points">
-                                                <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
+                                                <li>Designed and fabricated Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
-                                                <li>Simulated the entire rover physics and sensor stack including Visual-Inertial Odometry and 3D reconstruction with ROS2 in Gazebo and Webots to reduce physical prototyping iteration time and cost.</li>
-                                                <li>Developed a real-time visual navigation system for the rover using arrow detection based directional pose estimation for precise heading recognition and autonomous spatial navigation.</li>
+                                                <li>Developed real-time visual navigation system for the rover using arrow detection based directional pose estimation for precise heading recognition and autonomous spatial navigation.</li>
+                                                <li>Simulated the entire rover physics and sensor stack including Visual Inertial Odometry and 3D reconstruction with ROS2 in Gazebo and Webots to optimize physical prototyping iteration time and cost.</li>
                                             </ul>
                                         </div>
                                         <div className="extra-role">
                                             <span className="extra-role-title">Team Lead (Software)</span>
                                             <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
                                             <ul className="extra-role-points">
-                                                <li>Developed the real-time autonomous traversal system for URC 2022 using visual ArUco marker-based pose estimation with camera calibration for precise spatial localization.</li>
-                                                <li>Engineered high-precision GPS navigation via ublox C099-F9P RTK GNSS module.</li>
-                                                <li>Performed sensor fusion of Slamtec RPLidar A1, ToF, and ultrasonic data to implement SLAM-based localization and real-time obstacle avoidance.</li>
+                                                <li>Built a two-stage autonomous navigation system for mars rover using u-blox ZED C099-F9P RTK GNSS module for high-precision global positioning before local marker-guided traversal.</li>
+                                                <li>Implemented visual ArUco marker based pose estimation with camera calibration using ChArUco board for precise spatial localization that allows the rover to transition from GNSS navigation to marker-guided traversal for precise final-stage movement.</li>
+                                                <li>Performed sensor fusion of RPLidar A1 LIDAR, ToF and ultrasonic sensor data to implement SLAM based localization and real-time obstacle avoidance.</li>
                                             </ul>
                                         </div>
                                     </div>
