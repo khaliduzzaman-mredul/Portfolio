@@ -178,6 +178,31 @@
     color: var(--accent-purple);
 }
 
+.extra-role-points {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.extra-role-points li {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.extra-role-points li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-size: 0.8rem;
+}
+
 
 /* =========================================
    Right Column: Achievements

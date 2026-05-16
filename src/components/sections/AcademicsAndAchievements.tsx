@@ -123,10 +123,21 @@ const AcademicsAndAchievements = () => {
                                     <div className="extra-role">
                                         <span className="extra-role-title">Team Captain</span>
                                         <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
+                                        <ul className="extra-role-points">
+                                            <li>Orchestrated design and fabrication of a full Rocker-Bogie chassis and a 6-DOF robotic arm with ambidex LIMS-2 mechanism.</li>
+                                            <li>Implemented inverse kinematics for the manipulator to achieve precise end-effector control.</li>
+                                            <li>Migrated the entire rover software stack to a ROS2 architecture and validated via Gazebo and Webots simulations.</li>
+                                            <li>Upgraded the autonomous CV pipeline from ArUco markers to directional arrow detection to qualify for IRC 2023.</li>
+                                        </ul>
                                     </div>
                                     <div className="extra-role">
                                         <span className="extra-role-title">Team Lead (Software)</span>
                                         <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
+                                        <ul className="extra-role-points">
+                                            <li>Developed the autonomous traversal system for URC 2022 using visual ArUco marker detection.</li>
+                                            <li>Engineered high-precision GPS navigation via ublox C099-F9P RTK GNSS module.</li>
+                                            <li>Fused Slamtec RPLidar A1, ToF, and ultrasonic sensors for robust obstacle detection and avoidance.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </motion.div>
