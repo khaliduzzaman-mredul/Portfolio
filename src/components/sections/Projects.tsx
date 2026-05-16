@@ -13,10 +13,10 @@ const Projects = () => {
             tags: ["IoT", "Automation", "Python"]
         },
         {
-            title: "Autonomous Visual & GPS Navigation System for Mars Rover",
+            title: "Fully Autonomous Mars Rover System (URC 2022 & IRC 2023)",
             type: "Project",
-            desc: "Developed an autonomous navigation system utilizing computer vision and GPS waypoints for traversal in simulated Mars-like terrains.",
-            tags: ["Computer Vision", "ROS", "OpenCV"]
+            desc: "Led the fabrication and software architecture of a Mars rover featuring a Rocker-Bogie chassis and a 6-DOF ambidex LIMS-2 manipulator. Engineered a custom ROS2 stack achieving autonomous traversal via visual ArUco/arrow detection and high-precision sensor fusion (ublox RTK GNSS, RPLidar A1, ToF, Ultrasonic). Extensively validated via Gazebo and Webots physics simulations.",
+            tags: ["ROS2", "Sensor Fusion", "Computer Vision", "Gazebo/Webots", "Kinematics"]
         },
         {
             title: "Voice Control System for Power wheelchair for people with physical disability",
