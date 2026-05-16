@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: stretch;
+    align-items: start;
 }
 
 .academic-card {
@@ -150,7 +150,7 @@
 .extra-roles {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1.4rem;
     margin-top: 0.5rem;
 }
 
@@ -193,10 +193,11 @@
 
 .extra-role-points li {
     color: var(--text-secondary);
-    font-size: 0.88rem;
-    line-height: 1.5;
+    font-size: 0.92rem;
+    line-height: 1.8;
     padding-left: 1.2rem;
     position: relative;
+    margin-bottom: 0.2rem;
 }
 
 .extra-role-points li::before {
@@ -214,13 +215,11 @@
 .extra-col {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .achievements-col {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .achievements-list {
