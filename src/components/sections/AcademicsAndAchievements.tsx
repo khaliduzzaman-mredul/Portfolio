@@ -127,17 +127,17 @@ const AcademicsAndAchievements = () => {
                                             <ul className="extra-role-points">
                                                 <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve precise end-effector control for performing tasks such as flipping small switches, plugging USB cables, and typing on a keyboard.</li>
-                                                <li>Simulated the entire rover physics and sensor stack with ROS2 in Gazebo and Webots environments to reduce physical prototyping iteration time and cost.</li>
-                                                <li>Upgraded the autonomous CV pipeline from ArUco markers to directional arrow detection to qualify for IRC 2023.</li>
+                                                <li>Simulated the entire rover physics and sensor stack — including Visual-Inertial Odometry (VIO) and 3D reconstruction pipelines — with ROS2 in Gazebo and Webots to reduce physical prototyping iteration time and cost.</li>
+                                                <li>Upgraded the real-time perception pipeline from ArUco-based marker detection to directional arrow recognition to qualify for IRC 2023.</li>
                                             </ul>
                                         </div>
                                         <div className="extra-role">
                                             <span className="extra-role-title">Team Lead (Software)</span>
                                             <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
                                             <ul className="extra-role-points">
-                                                <li>Developed the autonomous traversal system for URC 2022 using visual ArUco marker detection.</li>
+                                                <li>Developed the real-time autonomous traversal system for URC 2022 using visual ArUco marker-based pose estimation with camera calibration for precise spatial localization.</li>
                                                 <li>Engineered high-precision GPS navigation via ublox C099-F9P RTK GNSS module.</li>
-                                                <li>Fused Slamtec RPLidar A1, ToF, and ultrasonic sensors for robust obstacle detection and avoidance.</li>
+                                                <li>Performed sensor fusion of Slamtec RPLidar A1, ToF, and ultrasonic data to implement SLAM-based localization and real-time obstacle avoidance.</li>
                                             </ul>
                                         </div>
                                     </div>
