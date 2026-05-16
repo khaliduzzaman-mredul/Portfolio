@@ -128,7 +128,7 @@ const AcademicsAndAchievements = () => {
                                                 <li>Designed and fabricated the Mars rover chassis based on the Rocker-Bogie principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the AMBIDEX LIMS-2 and differential joint mechanism with inverse kinematics to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
                                                 <li>Simulated the entire rover physics and sensor stack including Visual-Inertial Odometry and 3D reconstruction with ROS2 in Gazebo and Webots to reduce physical prototyping iteration time and cost.</li>
-                                                <li>Engineered a real-time visual navigation system for IRC 2023 using arrow detection-based directional pose estimation for precise heading recognition and autonomous spatial navigation.</li>
+                                                <li>Developed a real-time visual navigation system for the rover using arrow detection based directional pose estimation for precise heading recognition and autonomous spatial navigation.</li>
                                             </ul>
                                         </div>
                                         <div className="extra-role">
