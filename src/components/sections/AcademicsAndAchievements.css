@@ -3,19 +3,23 @@
 }
 
 .acad-achiev-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
-/* =========================================
-   Left Column: Academics & Extracurriculars
-   ========================================= */
-.academics-col {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+/* Top Row: Academic History - full width */
+.acad-top-row {
+    width: 100%;
+}
+
+/* Bottom Row: Extracurricular + Achievements side by side */
+.acad-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
 }
 
 .academic-card {
@@ -205,8 +209,13 @@
 
 
 /* =========================================
-   Right Column: Achievements
+   Bottom Row Columns
    ========================================= */
+.extra-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .achievements-col {
     display: flex;
     flex-direction: column;
@@ -284,7 +293,7 @@
 
 /* Responsive Scaling */
 @media (max-width: 992px) {
-    .acad-achiev-container {
+    .acad-bottom-row {
         grid-template-columns: 1fr;
     }
 }
