@@ -276,10 +276,19 @@
 .ach-details li {
     position: relative;
     padding-left: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     color: var(--text-secondary);
     font-size: 0.9rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.ach-detail-venue {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-style: italic;
 }
 
 .ach-details li::before {
