@@ -144,7 +144,7 @@
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
 }
 
 .extra-roles {
@@ -198,6 +198,7 @@
     padding-left: 1.2rem;
     position: relative;
     margin-bottom: 0.2rem;
+    text-align: justify;
 }
 
 .extra-role-points li::before {
@@ -279,7 +280,7 @@
     margin-bottom: 0.7rem;
     color: var(--text-secondary);
     font-size: 0.9rem;
-    text-align: left;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
@@ -288,6 +289,7 @@
 .ach-detail-venue {
     color: var(--text-muted);
     font-size: 0.8rem;
+    text-align: justify;
 }
 
 .ach-details li::before {
