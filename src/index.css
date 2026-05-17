@@ -49,6 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+/* Global justify for body text across all sections */
+.section p,
+.section li {
+  text-align: justify;
+}
+
 a {
   color: var(--accent-cyan);
   text-decoration: none;
