@@ -288,7 +288,6 @@
 .ach-detail-venue {
     color: var(--text-muted);
     font-size: 0.8rem;
-    font-style: italic;
 }
 
 .ach-details li::before {
