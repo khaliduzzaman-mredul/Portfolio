@@ -1,8 +1,8 @@
 .footer {
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
     border-top: 1px solid var(--glass-border);
     background: var(--bg-primary);
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .footer-content {
