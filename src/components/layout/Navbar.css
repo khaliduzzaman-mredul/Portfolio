@@ -3,13 +3,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     z-index: 1000;
     transition: all var(--transition-normal);
 }
 
 .navbar.scrolled {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     background: var(--nav-bg-scrolled, rgba(10, 10, 15, 0.8));
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
