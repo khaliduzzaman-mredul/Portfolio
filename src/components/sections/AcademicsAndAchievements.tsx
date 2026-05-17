@@ -11,7 +11,7 @@ const AcademicsAndAchievements = () => {
         details?: (string | React.ReactNode)[];
         subEvents?: {
             event: string;
-            details: string[];
+            details: (string | React.ReactNode)[];
         }[];
         link?: string;
         description?: string;
@@ -21,26 +21,26 @@ const AcademicsAndAchievements = () => {
         {
             title: "National Champion",
             icon: <Trophy size={20} style={{ color: 'var(--accent-cyan)' }} />,
-            event: "30 lbs. Feather Weight RoboWar",
+            event: "RoboWar [30 lbs. Feather Weight Class]",
             details: [
-                <><span>Bit Arena - 2022</span><span className="ach-detail-venue">North South University (NSU)</span></>,
-                <><span>INIT_3.0 - 2023</span><span className="ach-detail-venue">Independent University, Bangladesh (IUB)</span></>,
-                <><span>Technocrats_v1 - 2023</span><span className="ach-detail-venue">International University of Business Agriculture and Technology (IUBAT)</span></>,
-                <><span>MechaFest - 2024</span><span className="ach-detail-venue">Bangladesh University of Engineering and Technology (BUET)</span></>
+                <><span><strong>Bit Arena - 2022</strong></span><span className="ach-detail-venue">North South University (NSU)</span></>,
+                <><span><strong>INIT_3.0 - 2023</strong></span><span className="ach-detail-venue">Independent University, Bangladesh (IUB)</span></>,
+                <><span><strong>Technocrats_v1 - 2023</strong></span><span className="ach-detail-venue">International University of Business Agriculture and Technology (IUBAT)</span></>,
+                <><span><strong>MechaFest - 2024</strong></span><span className="ach-detail-venue">Bangladesh University of Engineering and Technology (BUET)</span></>
             ]
         },
         {
             title: "National Runner-up",
             icon: <Medal size={20} style={{ color: 'var(--accent-cyan)' }} />,
-            event: "30 lbs. Feather Weight RoboWar",
+            event: "RoboWar [30 lbs. Feather Weight Class]",
             details: [
-                <><span>TechFest - 2022</span><span className="ach-detail-venue">IIT Bombay Zonal</span></>,
-                <><span>Technoxian_8.0 - 2024</span><span className="ach-detail-venue">Delhi Zonal</span></>
+                <><span><strong>TechFest - 2022</strong></span><span className="ach-detail-venue">IIT Bombay Zonal</span></>,
+                <><span><strong>Technoxian_8.0 - 2024</strong></span><span className="ach-detail-venue">Delhi Zonal</span></>
             ],
             subEvents: [
                 {
-                    event: "Drone Race",
-                    details: ["Technocrats_v1 - 2023 | International University of Business Agriculture and Technology (IUBAT)"]
+                    event: "Drone Race [5 inch Quadcopter]",
+                    details: [<><span><strong>Technocrats_v1 - 2023</strong></span><span className="ach-detail-venue">International University of Business Agriculture and Technology (IUBAT)</span></>]
                 }
             ]
         },
@@ -50,15 +50,15 @@ const AcademicsAndAchievements = () => {
             subEvents: [
                 {
                     event: "National Havoc Robot League (NHRL)",
-                    details: ["Connecticut, USA - 2024, 2025"]
+                    details: ["Norwalk, Connecticut, USA - 2024, 2025"]
                 },
                 {
                     event: "University Rover Challenge (URC)",
-                    details: ["Utah, USA - 2022"]
+                    details: ["Hanksville, Utah, USA - 2022"]
                 },
                 {
                     event: "International Rover Challenge (IRC)",
-                    details: ["Karnataka, India - 2023"]
+                    details: ["Bangalore, Karnataka, India - 2023"]
                 }
             ]
         }
@@ -136,7 +136,7 @@ const AcademicsAndAchievements = () => {
                                                 <li>Designed and fabricated Mars rover chassis based on the <strong>Rocker-Bogie</strong> principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the <strong>AMBIDEX LIMS-2</strong> and <strong>Differential Joint</strong> mechanism with <strong>Inverse Kinematics</strong> to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
                                                 <li>Developed real-time visual navigation system for the rover using <strong>Arrow Detection Based Directional Pose Estimation</strong> for precise heading recognition and autonomous spatial navigation.</li>
-                                                <li>Simulated the entire rover physics and sensor stack including <strong>Visual Inertial Odometry</strong> and <strong>3D Reconstruction</strong> with <strong>ROS2</strong> in <strong>Gazebo</strong> and <strong>Webots</strong> to optimize physical prototyping iteration time and cost.</li>
+                                                <li>Simulated the entire rover perception stack in <strong>ROS2</strong> using <strong>Gazebo</strong> and <strong>Webots</strong>, fusing <strong>LiDAR</strong> and <strong>RGB-D ToF</strong> sensor data for <strong>Visual Inertial Odometry</strong> and <strong>3D reconstruction</strong> with autonomous navigation before hardware deployment, reducing physical prototyping time and costs by nearly 80%.</li>
                                             </ul>
                                         </div>
                                         <div className="extra-role">
@@ -145,7 +145,7 @@ const AcademicsAndAchievements = () => {
                                             <ul className="extra-role-points">
                                                 <li>Built a two-stage autonomous navigation system for mars rover using <strong>U-Blox ZED C099-F9P RTK GNSS</strong> module for high-precision global positioning before local marker-guided traversal.</li>
                                                 <li>Implemented visual <strong>ArUco marker based pose estimation</strong> with camera calibration using <strong>ChArUco board</strong> for precise spatial localization that allows the rover to transition from GNSS navigation to marker-guided traversal for precise final-stage movement.</li>
-                                                <li>Performed sensor fusion of <strong>RPLidar A1 LIDAR, ToF and Ultrasonic sensor</strong> data to implement <strong>SLAM </strong>based localization and real-time obstacle avoidance.</li>
+                                                <li>Developed a real-time obstacle detection and collision avoidance system for the rover using <strong>Hector SLAM</strong> algorithm for LiDAR-based localization, along with <strong>Time of Flight</strong> and <strong>Ultrasonic Sensor</strong> fusion for close-range collision awareness.</li>
                                             </ul>
                                         </div>
                                     </div>
