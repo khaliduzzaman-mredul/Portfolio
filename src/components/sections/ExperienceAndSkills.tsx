@@ -11,10 +11,10 @@ const ExperienceAndSkills = () => {
             date: "Sep. 2023 - Present",
             link: "https://d2a2i.aiub.edu/project-bscl.html",
             points: [
-                "Led the R&D team for the 'Real-time Object Detection based TRP Measurement System' for Bangladesh Satellite Company Limited (BSCL).",
-                "Developed SOTA visual detection algorithms achieving 15% better accuracy with 65% smaller dataset.",
-                "Created a custom annotated dataset of 250K+ image samples across 264 classes of TV channel logos.",
-                "Developing a Smart-sensor Attachment Module using Realtime Object Detection and Laser Sensing (LIDAR, ToF, RGB-D) for power wheelchairs."
+                "Spearheaded R&D for the v2 TRP Measurement System, achieving a 30-40% increase in detection accuracy with a 50% smaller dataset by curating precise manual annotations for SOTA models (YOLO, RT-DETR) and optimizing inference for downgraded hardware (Raspberry Pi 4 4GB).",
+                "Re-architected the core algorithm from scratch to minimize code footprint, CPU/RAM utilization, and training time, while independently designing a system-wide encryption protocol to exponentially secure all deployed edge node communications.",
+                "Engineered an LLM-integrated half-body humanoid robot featuring 6-DoF arm kinematics and synchronized head-eye tracking, delivering practical, gesture-augmented interactive communication to guide university newcomers.",
+                "Architecting a universally attachable perception module for power wheelchairs for a Canadian client, fusing LiDAR, RGB-D ToF, and Ultrasonic sensors with custom computer vision algorithms to enable real-time sign recognition and collision avoidance."
             ]
         },
         {
@@ -34,10 +34,10 @@ const ExperienceAndSkills = () => {
             company: "D2A2I Institute of Innovation, AIUB",
             date: "Feb. 2023 - Aug. 2023",
             points: [
-                "Contributed to the design of a Half-body Humanoid Desk Assistant Robot featuring LLM and Computer Vision.",
-                "Conducted performance evaluation of deep learning models for the intended use cases.",
-                "Managed production-grade Linux-operated SBCs (Raspberry Pi, Jetson Orin Nano).",
-                "Contributed to manual image annotation for training production-level deployed models."
+                "Engineered an automated GitHub-based Over-The-Air (OTA) update system and streamlined the annotation/training pipeline, completely eliminating manual software updates across all deployed edge devices and drastically reducing operational costs.",
+                "Conducted rigorous performance benchmarking of deep learning architectures (ResNet, MobileNet) by iteratively augmenting and validating datasets, systematically selecting the optimal model for constrained real-time inference.",
+                "Deployed and profiled the v1 TRP Measurement System across diverse embedded Linux platforms (Raspberry Pi 4/5, Jetson Nano/Orin Nano, Orange Pi) to evaluate hardware feasibility and maximize computational efficiency.",
+                "Interfaced edge compute units with diverse microcontrollers (ESP32, ESP8266, STM32, Arduino, Portenta H7) to orchestrate robust low-latency sensor data acquisition and hardware actuation."
             ]
         }
     ];
