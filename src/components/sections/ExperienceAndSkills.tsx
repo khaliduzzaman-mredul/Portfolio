@@ -13,7 +13,7 @@ const ExperienceAndSkills = () => {
                     title: "AI/ML Research Engineer [Computer Vision AI]",
                     date: "Sep. 2023 - Present",
                     points: [
-                        "Led the R&D team to develop the second iteration of the Real-time Object Detection-based TRP Measurement System for Bangladesh Satellite Company Limited, improving mean Average Precision (mAP) by over 30% with a 50% smaller custom annotated dataset using state-of-the-art object detection models.",
+                        <>Led the R&D team to develop the second iteration of the <strong>Real-time Object Detection-based TRP Measurement System</strong> for Bangladesh Satellite Company Limited, improving mean Average Precision (mAP) by over 30% with a 50% smaller custom annotated dataset using state-of-the-art object detection models.</>,
                         "Identified the most feasible architecture for the target use case by benchmarking multiple object detection models, including YOLO, RT-DETR and RF-DETR, across mAP, inference latency, hardware compatibility and resource efficiency.",
                         "Improved overall system efficiency through inference and architecture-level optimization, reducing average hardware resource utilization by nearly 25%, achieving better real-time performance on lower-spec hardware compared to the previous system.",
                         "Built a fully functional half-body humanoid robot for university newcomer guidance, integrating 6-DoF arm kinematics, synchronized head and eye tracking and LLM-powered interaction for gesture-augmented communication.",
