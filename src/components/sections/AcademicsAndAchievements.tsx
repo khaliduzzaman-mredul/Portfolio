@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, ExternalLink, GraduationCap, Award, Users, Medal, Globe } from 'lucide-react';
+import { Trophy, ExternalLink, GraduationCap, Award, Users, Medal, Globe, Bot } from 'lucide-react';
 import './AcademicsAndAchievements.css';
 
 const AcademicsAndAchievements = () => {
@@ -125,8 +125,10 @@ const AcademicsAndAchievements = () => {
                                     transition={{ duration: 0.5, delay: 0.2 }}
                                 >
                                     <div className="extra-header">
-                                        <Users size={20} className="extra-icon" />
-                                        <h4>AIUB Robotic Crew (ARC)</h4>
+                                        <div className="extra-title-row">
+                                            <Bot size={20} className="extra-icon" />
+                                            <h4>AIUB Robotic Crew (ARC)</h4>
+                                        </div>
                                     </div>
                                     <div className="extra-roles">
                                         <div className="extra-role">
@@ -163,8 +165,10 @@ const AcademicsAndAchievements = () => {
                                     transition={{ duration: 0.5, delay: 0.3 }}
                                 >
                                     <div className="extra-header">
-                                        <Users size={20} className="extra-icon" />
-                                        <h4>IEEE AIUB Student Branch</h4>
+                                        <div className="extra-title-row">
+                                            <Users size={20} className="extra-icon" />
+                                            <h4>IEEE AIUB Student Branch</h4>
+                                        </div>
                                     </div>
                                     <div className="extra-roles">
                                         <div className="extra-role">
