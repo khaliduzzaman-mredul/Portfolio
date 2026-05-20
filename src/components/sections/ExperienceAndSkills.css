@@ -112,7 +112,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
@@ -135,6 +134,7 @@
 .exp-points {
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
     text-align: left;
 }
 
