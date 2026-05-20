@@ -11,9 +11,10 @@ const ExperienceAndSkills = () => {
             date: "Sep. 2023 - Present",
             link: "https://d2a2i.aiub.edu/project-bscl.html",
             points: [
-                "Spearheaded R&D for the v2 TRP Measurement System, achieving a 30-40% increase in detection accuracy with a 50% smaller dataset by curating precise manual annotations for SOTA models (YOLO, RT-DETR) and optimizing inference for downgraded hardware (Raspberry Pi 4 4GB).",
-                "Re-architected the core algorithm from scratch to minimize code footprint, CPU/RAM utilization, and training time, while independently designing a system-wide encryption protocol to exponentially secure all deployed edge node communications.",
-                "Engineered an LLM-integrated half-body humanoid robot featuring 6-DoF arm kinematics and synchronized head-eye tracking, delivering practical, gesture-augmented interactive communication to guide university newcomers.",
+                "Led the R&D team to develop the second iteration of the Real-time Object Detection-based TRP Measurement System for Bangladesh Satellite Company Limited, improving mean Average Precision (mAP) by over 30% with a 50% smaller custom annotated dataset using state-of-the-art object detection models.",
+                "Identified the most feasible architecture for the target use case by benchmarking multiple object detection models, including YOLO, RT-DETR and RF-DETR, across mAP, inference latency, hardware compatibility and resource efficiency.",
+                "Improved overall system efficiency through inference and architecture-level optimization, reducing average hardware resource utilization by nearly 25%, achieving better real-time performance on lower-spec hardware compared to the previous system.",
+                "Built a fully functional half-body humanoid robot for university newcomer guidance, integrating 6-DoF arm kinematics, synchronized head and eye tracking and LLM-powered interaction for gesture-augmented communication.",
                 "Architecting a universally attachable perception module for power wheelchairs for a Canadian client, fusing LiDAR, RGB-D ToF, and Ultrasonic sensors with custom computer vision algorithms to enable real-time sign recognition and collision avoidance."
             ]
         },
