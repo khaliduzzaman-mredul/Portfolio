@@ -130,18 +130,22 @@ const AcademicsAndAchievements = () => {
                                     </div>
                                     <div className="extra-roles">
                                         <div className="extra-role">
-                                            <span className="extra-role-title">Team Captain</span>
-                                            <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
+                                            <div className="extra-role-header">
+                                                <span className="extra-role-title">Team Captain</span>
+                                                <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
+                                            </div>
                                             <ul className="extra-role-points">
                                                 <li>Designed and fabricated Mars rover chassis based on the <strong>Rocker-Bogie</strong> principle for optimum rough-terrain maneuverability.</li>
                                                 <li>Developed a 6-DoF manipulator implementing the <strong>AMBIDEX LIMS-2</strong> and <strong>Differential Joint</strong> mechanism with <strong>Inverse Kinematics</strong> to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
                                                 <li>Developed real-time visual navigation system for the rover using <strong>Arrow Detection Based Directional Pose Estimation</strong> for precise heading recognition and autonomous spatial navigation.</li>
-                                                <li>Simulated the entire rover perception stack in <strong>ROS2</strong> using <strong>Gazebo</strong> and <strong>Webots</strong>, fusing <strong>LiDAR</strong> and <strong>RGB-D ToF</strong> sensor data for <strong>Visual Inertial Odometry</strong> and <strong>3D reconstruction</strong> with autonomous navigation before hardware deployment, reducing physical prototyping time and costs by nearly 80%.</li>
+                                                <li>Simulated the entire rover perception stack in <strong>ROS2</strong> using <strong>Gazebo</strong> and <strong>Webots</strong>, fusing <strong>LiDAR</strong> and <strong>RGB-D</strong> sensor data for <strong>Visual Inertial Odometry</strong> and <strong>3D reconstruction</strong> with autonomous navigation before hardware deployment, reducing physical prototyping time and costs by nearly 80%.</li>
                                             </ul>
                                         </div>
                                         <div className="extra-role">
-                                            <span className="extra-role-title">Team Lead (Software)</span>
-                                            <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
+                                            <div className="extra-role-header">
+                                                <span className="extra-role-title">Team Lead (Software)</span>
+                                                <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
+                                            </div>
                                             <ul className="extra-role-points">
                                                 <li>Built a two-stage autonomous navigation system for mars rover using <strong>U-Blox ZED C099-F9P RTK GNSS</strong> module for high-precision global positioning before local marker-guided traversal.</li>
                                                 <li>Implemented visual <strong>ArUco marker based pose estimation</strong> with camera calibration using <strong>ChArUco board</strong> for precise spatial localization that allows the rover to transition from GNSS navigation to marker-guided traversal for precise final-stage movement.</li>
@@ -164,8 +168,10 @@ const AcademicsAndAchievements = () => {
                                     </div>
                                     <div className="extra-roles">
                                         <div className="extra-role">
-                                            <span className="extra-role-title">Student Member</span>
-                                            <span className="extra-role-date">Jul. 2021 – Jun. 2023</span>
+                                            <div className="extra-role-header">
+                                                <span className="extra-role-title">Student Member</span>
+                                                <span className="extra-role-date">Jul. 2021 – Jun. 2023</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </motion.div>

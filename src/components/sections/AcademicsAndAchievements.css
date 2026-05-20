@@ -128,16 +128,22 @@
 }
 
 .extra-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    margin-bottom: 0.5rem;
-    color: var(--accent-purple);
 }
 
 .extra-header h4 {
+    font-size: 1.25rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.extra-icon {
+    color: var(--accent-cyan);
 }
 
 .extra-desc {
@@ -150,63 +156,62 @@
 .extra-roles {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
-    margin-top: 0.5rem;
 }
 
 .extra-role {
+    margin-bottom: 2rem;
+}
+
+.extra-role:last-child {
+    margin-bottom: 0;
+}
+
+.extra-role-header {
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .extra-role-title {
-    color: var(--accent-cyan);
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-align: left;
+    font-weight: 600;
+    color: var(--accent-purple);
+    font-size: 1.1rem;
 }
 
 .extra-role-date {
-    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
     font-size: 0.85rem;
-    position: relative;
-    padding-left: 1rem;
-}
-
-.extra-role-date::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--accent-purple);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
 }
 
 .extra-role-points {
     list-style: none;
     padding: 0;
-    margin: 0.5rem 0 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    text-align: left;
 }
 
 .extra-role-points li {
-    color: var(--text-secondary);
-    font-size: 0.92rem;
-    line-height: 1.8;
-    padding-left: 1.2rem;
     position: relative;
-    margin-bottom: 0.2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
     text-align: justify;
+    font-size: 0.95rem;
 }
 
 .extra-role-points li::before {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--accent-cyan);
-    font-size: 0.8rem;
+    color: var(--accent-purple);
+    font-weight: bold;
 }
 
 
