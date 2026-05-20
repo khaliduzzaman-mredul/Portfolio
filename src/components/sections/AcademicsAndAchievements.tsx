@@ -176,6 +176,11 @@ const AcademicsAndAchievements = () => {
                                                 <span className="extra-role-title">Student Member</span>
                                                 <span className="extra-role-date">Jul. 2021 – Jun. 2023</span>
                                             </div>
+                                            <ul className="extra-role-points">
+                                                <li>Participated in IEEE technical workshops and knowledge-sharing sessions focused on engineering, research, and emerging technologies.</li>
+                                                <li>Supported promotional activities for IEEE events through student outreach, social media sharing, and campus-level communication.</li>
+                                                <li>Contributed to volunteer activities during IEEE-led competitions, seminars, and networking events.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </motion.div>
