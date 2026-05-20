@@ -16,10 +16,9 @@
 
 /* Bottom Row: Extracurricular + Achievements side by side */
 .acad-bottom-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 4rem;
-    align-items: stretch;
 }
 
 .academic-card {
@@ -268,8 +267,8 @@
 }
 
 .achievements-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -346,9 +345,8 @@
     margin-bottom: 0;
 }
 
-/* Responsive Scaling */
 @media (max-width: 992px) {
-    .acad-bottom-row {
+    .achievements-list {
         grid-template-columns: 1fr;
     }
 }
