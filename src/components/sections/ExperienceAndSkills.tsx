@@ -6,39 +6,46 @@ import './ExperienceAndSkills.css';
 const ExperienceAndSkills = () => {
     const experiences = [
         {
-            role: "AI/ML Research Engineer [Computer Vision AI]",
             company: "D2A2I Institute of Innovation, AIUB",
-            date: "Sep. 2023 - Present",
             link: "https://d2a2i.aiub.edu/project-bscl.html",
-            points: [
-                "Led the R&D team to develop the second iteration of the Real-time Object Detection-based TRP Measurement System for Bangladesh Satellite Company Limited, improving mean Average Precision (mAP) by over 30% with a 50% smaller custom annotated dataset using state-of-the-art object detection models.",
-                "Identified the most feasible architecture for the target use case by benchmarking multiple object detection models, including YOLO, RT-DETR and RF-DETR, across mAP, inference latency, hardware compatibility and resource efficiency.",
-                "Improved overall system efficiency through inference and architecture-level optimization, reducing average hardware resource utilization by nearly 25%, achieving better real-time performance on lower-spec hardware compared to the previous system.",
-                "Built a fully functional half-body humanoid robot for university newcomer guidance, integrating 6-DoF arm kinematics, synchronized head and eye tracking and LLM-powered interaction for gesture-augmented communication.",
-                "Architecting a universally attachable perception module for power wheelchairs for a Canadian client, fusing LiDAR, RGB-D ToF, and Ultrasonic sensors with custom computer vision algorithms to enable real-time sign recognition and collision avoidance."
+            roles: [
+                {
+                    title: "AI/ML Research Engineer [Computer Vision AI]",
+                    date: "Sep. 2023 - Present",
+                    points: [
+                        "Led the R&D team to develop the second iteration of the Real-time Object Detection-based TRP Measurement System for Bangladesh Satellite Company Limited, improving mean Average Precision (mAP) by over 30% with a 50% smaller custom annotated dataset using state-of-the-art object detection models.",
+                        "Identified the most feasible architecture for the target use case by benchmarking multiple object detection models, including YOLO, RT-DETR and RF-DETR, across mAP, inference latency, hardware compatibility and resource efficiency.",
+                        "Improved overall system efficiency through inference and architecture-level optimization, reducing average hardware resource utilization by nearly 25%, achieving better real-time performance on lower-spec hardware compared to the previous system.",
+                        "Built a fully functional half-body humanoid robot for university newcomer guidance, integrating 6-DoF arm kinematics, synchronized head and eye tracking and LLM-powered interaction for gesture-augmented communication.",
+                        "Currently developing a universal perception module for power wheelchairs, enabling real-time traffic sign recognition and collision avoidance in Canadian outdoor scenarios by combining a custom computer vision system with multi-sensor fusion data."
+                    ]
+                },
+                {
+                    title: "Research Assistant [AI | Robotics]",
+                    date: "Feb. 2023 - Aug. 2023",
+                    points: [
+                        "Engineered an automated GitHub-based Over-The-Air (OTA) update system and streamlined the annotation/training pipeline, completely eliminating manual software updates across all deployed edge devices and drastically reducing operational costs.",
+                        "Conducted rigorous performance benchmarking of deep learning architectures (ResNet, MobileNet) by iteratively augmenting and validating datasets, systematically selecting the optimal model for constrained real-time inference.",
+                        "Deployed and profiled the v1 TRP Measurement System across diverse embedded Linux platforms (Raspberry Pi 4/5, Jetson Nano/Orin Nano, Orange Pi) to evaluate hardware feasibility and maximize computational efficiency.",
+                        "Interfaced edge compute units with diverse microcontrollers (ESP32, ESP8266, STM32, Arduino, Portenta H7) to orchestrate robust low-latency sensor data acquisition and hardware actuation."
+                    ]
+                }
             ]
         },
         {
-            role: "Full Stack AI Developer & Product Designer",
             company: "Sonzaikan LTD, London, UK [Remote]",
-            date: "Mar. 2025 - Present",
             link: "https://writetagore.com",
-            points: [
-                "Designed and developed 'Tagore', an AI-powered smart typewriter device for rigorous writing.",
-                "Developed an LLM backend 'Author Intelligence' for paraphrasing, concept mapping, and tone changing.",
-                "Collaborated with University of Oxford and University of Sheffield to fabricate the initial prototype.",
-                "Implemented a custom embedded Linux system for the proprietary product development."
-            ]
-        },
-        {
-            role: "Research Assistant [AI | Robotics]",
-            company: "D2A2I Institute of Innovation, AIUB",
-            date: "Feb. 2023 - Aug. 2023",
-            points: [
-                "Engineered an automated GitHub-based Over-The-Air (OTA) update system and streamlined the annotation/training pipeline, completely eliminating manual software updates across all deployed edge devices and drastically reducing operational costs.",
-                "Conducted rigorous performance benchmarking of deep learning architectures (ResNet, MobileNet) by iteratively augmenting and validating datasets, systematically selecting the optimal model for constrained real-time inference.",
-                "Deployed and profiled the v1 TRP Measurement System across diverse embedded Linux platforms (Raspberry Pi 4/5, Jetson Nano/Orin Nano, Orange Pi) to evaluate hardware feasibility and maximize computational efficiency.",
-                "Interfaced edge compute units with diverse microcontrollers (ESP32, ESP8266, STM32, Arduino, Portenta H7) to orchestrate robust low-latency sensor data acquisition and hardware actuation."
+            roles: [
+                {
+                    title: "Full-Stack AI Developer & Product Design Engineer",
+                    date: "Mar. 2025 - Present",
+                    points: [
+                        "Designed and developed 'Tagore', an AI-powered smart typewriter device for rigorous writing.",
+                        "Developed an LLM backend 'Author Intelligence' for paraphrasing, concept mapping, and tone changing.",
+                        "Collaborated with University of Oxford and University of Sheffield to fabricate the initial prototype.",
+                        "Implemented a custom embedded Linux system for the proprietary product development."
+                    ]
+                }
             ]
         }
     ];
@@ -86,7 +93,7 @@ const ExperienceAndSkills = () => {
             >
                 <div className="exp-skills-container">
 
-                    {/* Left Column: Experience */}
+                    {/* Top Row: Experience */}
                     <div className="experience-col">
                         <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: 0, marginLeft: '2rem' }}>Professional Experience</h2>
 
@@ -105,27 +112,31 @@ const ExperienceAndSkills = () => {
                                         <div className="exp-header">
                                             <div className="exp-title-row">
                                                 <Briefcase size={20} className="exp-icon" />
-                                                <h3 className="exp-role">{exp.role}</h3>
-                                            </div>
-                                            <div className="exp-meta">
-                                                <span className="exp-company">
+                                                <h3 className="exp-company-title">
                                                     {exp.company}
                                                     {exp.link && (
                                                         <a href={exp.link} target="_blank" rel="noopener noreferrer" className="exp-link-icon" style={{ marginLeft: '8px', color: 'var(--accent-cyan)' }}>
                                                             <ExternalLink size={14} />
                                                         </a>
                                                     )}
-                                                </span>
-                                                <span className="exp-duration">
-                                                    {exp.date}
-                                                </span>
+                                                </h3>
                                             </div>
                                         </div>
-                                        <ul className="exp-points">
-                                            {exp.points.map((point, i) => (
-                                                <li key={i}>{point}</li>
+                                        <div className="exp-roles-container">
+                                            {exp.roles.map((role, rIdx) => (
+                                                <div key={rIdx} className="exp-role-item">
+                                                    <div className="exp-role-header">
+                                                        <span className="exp-role-name">{role.title}</span>
+                                                        <span className="exp-duration">{role.date}</span>
+                                                    </div>
+                                                    <ul className="exp-points">
+                                                        {role.points.map((point, i) => (
+                                                            <li key={i}>{point}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
                                             ))}
-                                        </ul>
+                                        </div>
                                     </div>
                                 </motion.div>
                             ))}
