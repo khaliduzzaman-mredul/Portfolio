@@ -77,37 +77,55 @@ const AcademicsAndAchievements = () => {
                     {/* Top Row: Academic History - full width */}
                     <div className="acad-top-row">
                         <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: 0 }}>Academic History</h2>
-                        <motion.div
-                            className="academic-card glass-panel"
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                        >
-                            <div className="acad-header">
-                                <GraduationCap size={24} className="acad-icon" />
-                                <h3>B.Sc. in Computer Science Engineering</h3>
-                            </div>
-                            <div className="acad-university">American International University-Bangladesh (AIUB)</div>
+                        <div className="acad-history-grid">
+                            <motion.div
+                                className="academic-card glass-panel"
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.1 }}
+                            >
+                                <div className="acad-header">
+                                    <GraduationCap size={24} className="acad-icon" />
+                                    <h3>B.Sc. in Computer Science Engineering</h3>
+                                </div>
+                                <div className="acad-university">American International University-Bangladesh (AIUB)</div>
 
-                            <div className="acad-details-container">
-                                <ul className="acad-details-list">
-                                    <li>
-                                        <span className="acad-detail-label">Major:</span>
-                                        <span className="acad-detail-value">Computer Engineering</span>
-                                    </li>
-                                    <li>
-                                        <span className="acad-detail-label">Graduation Year:</span>
-                                        <span className="acad-detail-value">2023</span>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div className="acad-details-container">
+                                    <ul className="acad-details-list">
+                                        <li>
+                                            <span className="acad-detail-label">Major:</span>
+                                            <span className="acad-detail-value">Computer Engineering</span>
+                                        </li>
+                                        <li>
+                                            <span className="acad-detail-label">Graduation Date:</span>
+                                            <span className="acad-detail-value">June, 2023</span>
+                                        </li>
+                                        <li>
+                                            <span className="acad-detail-label">Award Conferred:</span>
+                                            <span className="acad-detail-value">August, 2024</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </motion.div>
 
-                            <div className="acad-award">
-                                <Award size={18} className="award-icon" />
-                                <span>Dr. Anwarul Abedin Leadership Award (Chairman's Gold)</span>
-                            </div>
-                        </motion.div>
+                            <motion.div
+                                className="academic-award-card glass-panel"
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                            >
+                                <div className="acad-award-header">
+                                    <Award size={24} className="award-icon" />
+                                    <span>Academic Award</span>
+                                </div>
+                                <div className="acad-award-name">Chairman's Gold: Dr. Anwarul Abedin Leadership Award</div>
+                                <p className="acad-award-desc">
+                                    The highest distinction awarded by AIUB in recognition of outstanding leadership, exemplary performance, sustained dedication and noteworthy achievements and contributions throughout the period of studentship.
+                                </p>
+                            </motion.div>
+                        </div>
                     </div>
 
                     {/* Bottom Row: Extracurricular + Achievements side by side */}
@@ -137,8 +155,8 @@ const AcademicsAndAchievements = () => {
                                                 <span className="extra-role-date">Sep. 2022 – Aug. 2023</span>
                                             </div>
                                             <ul className="extra-role-points">
-                                                <li>Designed and fabricated Mars rover chassis based on the <strong>Rocker-Bogie</strong> principle for optimum rough-terrain maneuverability.</li>
-                                                <li>Developed a 6-DoF manipulator implementing the <strong>AMBIDEX LIMS-2</strong> and <strong>Differential Joint</strong> mechanism with <strong>Inverse Kinematics</strong> to achieve smooth end-effector control for performing precision tasks such as flipping micro switches, plugging USB cables and typing on a keyboard.</li>
+                                                <li>Redesigned the existing Mars Rover chassis by replacing the previous spring-based suspension with a Rocker-Bogie suspension system, improving rough-terrain maneuverability and mechanical stability across uneven surfaces.</li>
+                                                <li>Developed a 6-DoF robotic manipulator for the rover, using AMBIDEX LIMS-2 and Differential Joint mechanism with inverse kinematics for smooth end-effector control in precision tasks such as micro-switch flipping, USB cable insertion, and keyboard typing.</li>
                                                 <li>Developed real-time visual navigation system for the rover using <strong>Arrow Detection Based Directional Pose Estimation</strong> for precise heading recognition and autonomous spatial navigation.</li>
                                                 <li>Simulated the entire rover perception stack in <strong>ROS2</strong> using <strong>Gazebo</strong> and <strong>Webots</strong>, fusing <strong>LiDAR</strong> and <strong>RGB-D</strong> sensor data for <strong>Visual Inertial Odometry</strong> and <strong>3D reconstruction</strong> with autonomous navigation before hardware deployment, reducing physical prototyping time and costs by nearly 80%.</li>
                                             </ul>
@@ -149,9 +167,35 @@ const AcademicsAndAchievements = () => {
                                                 <span className="extra-role-date">Sep. 2021 – Aug. 2022</span>
                                             </div>
                                             <ul className="extra-role-points">
-                                                <li>Built a two-stage autonomous navigation system for mars rover using <strong>U-Blox ZED C099-F9P RTK GNSS</strong> module for high-precision global positioning before local marker-guided traversal.</li>
-                                                <li>Implemented visual <strong>ArUco marker based pose estimation</strong> with camera calibration using <strong>ChArUco board</strong> for precise spatial localization that allows the rover to transition from GNSS navigation to marker-guided traversal for precise final-stage movement.</li>
-                                                <li>Developed a real-time obstacle detection and collision avoidance system for the rover using <strong>Hector SLAM</strong> algorithm for LiDAR-based localization, along with <strong>Time of Flight</strong> and <strong>Ultrasonic Sensor</strong> fusion for close-range collision awareness.</li>
+                                                <li>Developed a two-stage autonomous navigation system for a Mars rover, integrating U-Blox ZED C099-F9P RTK GNSS-based global positioning in the initial stage with local ArUco marker guidance in the final stage.</li>
+                                                <li>Implemented pose estimation for the rover using visual ArUco marker detection with ChArUco board-based camera calibration for precise spatial localization during post-GNSS final-stage traversal.</li>
+                                                <li>Developed a real-time obstacle detection and collision avoidance system for the rover by integrating Hector SLAM-based LiDAR localization with Time-of-Flight and ultrasonic sensor fusion for close-range collision awareness.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
+                                <motion.div
+                                    className="extra-card glass-panel"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: 0.25 }}
+                                >
+                                    <div className="extra-header">
+                                        <div className="extra-title-row">
+                                            <Bot size={20} className="extra-icon" />
+                                            <h4>ARC PERCEPTRON</h4>
+                                        </div>
+                                    </div>
+                                    <div className="extra-roles">
+                                        <div className="extra-role">
+                                            <div className="extra-role-header">
+                                                <span className="extra-role-title">Founding Team Captain</span>
+                                                <span className="extra-role-date">Jun. 2022 – Jan. 2024</span>
+                                            </div>
+                                            <ul className="extra-role-points">
+                                                <li>Designed and Developed 15lbs Combat robots for national and international events.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -177,9 +221,9 @@ const AcademicsAndAchievements = () => {
                                                 <span className="extra-role-date">Jul. 2021 – Jun. 2023</span>
                                             </div>
                                             <ul className="extra-role-points">
-                                                <li>Participated in IEEE technical workshops and knowledge-sharing sessions focused on engineering, research, and emerging technologies.</li>
-                                                <li>Supported promotional activities for IEEE events through student outreach, social media sharing, and campus-level communication.</li>
-                                                <li>Contributed to volunteer activities during IEEE-led competitions, seminars, and networking events.</li>
+                                                <li>Participated in IEEE technical workshops and knowledge-sharing sessions focused on engineering, research and emerging technologies.</li>
+                                                <li>Supported promotional activities for IEEE events through student outreach, social media sharing and campus-level communication.</li>
+                                                <li>Contributed to activities during IEEE-led competitions, seminars and networking events.</li>
                                             </ul>
                                         </div>
                                     </div>
