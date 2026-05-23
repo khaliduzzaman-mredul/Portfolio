@@ -21,7 +21,7 @@ const AcademicsAndAchievements = () => {
         {
             title: "National Champion",
             icon: <Trophy size={20} style={{ color: 'var(--accent-cyan)' }} />,
-            event: "RoboWar [30 lbs. Feather Weight Class]",
+            event: "RoboWar [30 lb Feather Weight Class]",
             details: [
                 <><span><strong>Bit Arena - 2022</strong></span><span className="ach-detail-venue">North South University (NSU)</span></>,
                 <><span><strong>INIT_3.0 - 2023</strong></span><span className="ach-detail-venue">Independent University, Bangladesh (IUB)</span></>,
@@ -32,7 +32,7 @@ const AcademicsAndAchievements = () => {
         {
             title: "National Runner-up",
             icon: <Medal size={20} style={{ color: 'var(--accent-cyan)' }} />,
-            event: "RoboWar [30 lbs. Feather Weight Class]",
+            event: "RoboWar [30 lb Feather Weight Class]",
             details: [
                 <><span><strong>TechFest - 2022</strong></span><span className="ach-detail-venue">IIT Bombay Zonal</span></>,
                 <><span><strong>Technoxian_8.0 - 2024</strong></span><span className="ach-detail-venue">Delhi Zonal</span></>
@@ -156,7 +156,7 @@ const AcademicsAndAchievements = () => {
                                             </div>
                                             <ul className="extra-role-points">
                                                 <li>Redesigned the existing Mars Rover chassis by replacing the previous spring-based suspension with a Rocker-Bogie suspension system, improving rough-terrain maneuverability and mechanical stability across uneven surfaces.</li>
-                                                <li>Developed a 6-DoF robotic manipulator for the rover, using AMBIDEX LIMS-2 and Differential Joint mechanism with inverse kinematics for smooth end-effector control in precision tasks such as micro-switch flipping, USB cable insertion, and keyboard typing.</li>
+                                                <li>Developed a 6-DoF robotic manipulator for the rover, using AMBIDEX LIMS-2 and Differential Joint mechanism with inverse kinematics for smooth end-effector control in precision tasks such as micro-switch flipping, USB cable insertion and keyboard typing.</li>
                                                 <li>Developed real-time visual navigation system for the rover using <strong>Arrow Detection Based Directional Pose Estimation</strong> for precise heading recognition and autonomous spatial navigation.</li>
                                                 <li>Simulated the entire rover perception stack in <strong>ROS2</strong> using <strong>Gazebo</strong> and <strong>Webots</strong>, fusing <strong>LiDAR</strong> and <strong>RGB-D</strong> sensor data for <strong>Visual Inertial Odometry</strong> and <strong>3D reconstruction</strong> with autonomous navigation before hardware deployment, reducing physical prototyping time and costs by nearly 80%.</li>
                                             </ul>
@@ -192,10 +192,13 @@ const AcademicsAndAchievements = () => {
                                         <div className="extra-role">
                                             <div className="extra-role-header">
                                                 <span className="extra-role-title">Founding Team Captain</span>
-                                                <span className="extra-role-date">Jun. 2022 – Jan. 2024</span>
+                                                <span className="extra-role-date">Jun. 2022 – Oct. 2025</span>
                                             </div>
                                             <ul className="extra-role-points">
-                                                <li>Designed and Developed 15lbs Combat robots for national and international events.</li>
+                                                <li>Founded and led ARC PERCEPTRON, a specialized combat robotics unit under AIUB Robotic Crew, by forming a dedicated 5-member team to develop competition-grade combat robots.</li>
+                                                <li>Built a 30 lb vertical spinner combat robot with a custom CNC-machined 6061 aluminum billet chassis and 2-wheel direct-drive DC drivetrain for featherweight combat robotics events.</li>
+                                                <li>Improved the robot body and weapon system with a modular aluminum-nylon composite chassis and extended spinner reach from 72 mm to 90 mm, increasing impact resistance, repairability and weapon engagement capability while maintaining weight compliance.</li>
+                                                <li>Upgraded the robot drivetrain to a 4-wheel belt-driven BLDC system and redesigned the spinner from a symmetric to an asymmetric profile with an increased 120 mm reach, improving maneuverability and weapon kinetic energy for higher-level combat performance.</li>
                                             </ul>
                                         </div>
                                     </div>

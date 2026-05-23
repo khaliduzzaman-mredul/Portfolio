@@ -37,13 +37,13 @@ const ExperienceAndSkills = () => {
             link: "https://writetagore.com",
             roles: [
                 {
-                    title: "Full-Stack AI Developer & Product Design Engineer",
+                    title: "Product Design Engineer & Backend Developer",
                     date: "Mar. 2025 - Present",
                     points: [
-                        <>Designed and developed 'Tagore', an AI-powered smart typewriter device for rigorous writing.</>,
-                        <>Developed an LLM backend 'Author Intelligence' for paraphrasing, concept mapping, and tone changing.</>,
-                        <>Collaborated with University of Oxford and University of Sheffield to fabricate the initial prototype.</>,
-                        <>Implemented a custom embedded Linux system for the proprietary product development.</>
+                        <>Modeled Tagore, a smart typewriter built for distraction-free long-form writing, delivering a fabrication-ready functional design and finalized 3D renders for product visualization.</>,
+                        <>Collaborated with teams from the University of Oxford and the University of Sheffield to fabricate Tagore’s initial prototype based on the finalized functional design.</>,
+                        <>Developed Tagore’s backend software layer with core hardware integration and packaged the application for desktop deployment to ensure seamless coordination between the hardware and software stack.</>,
+                        <>Migrated the entire system stack into a custom embedded Linux environment, enabling Tagore to function as a dedicated proprietary device with a controlled runtime.</>
                     ]
                 }
             ]
