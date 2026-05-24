@@ -24,10 +24,9 @@ const ExperienceAndSkills = () => {
                     title: "Research Assistant [RA]",
                     date: "Feb. 2023 - Aug. 2023",
                     points: [
-                        <>Engineered an automated GitHub-based Over-The-Air (OTA) update system and streamlined the annotation/training pipeline, completely eliminating manual software updates across all deployed edge devices and drastically reducing operational costs.</>,
-                        <>Conducted rigorous performance benchmarking of deep learning architectures (ResNet, MobileNet) by iteratively augmenting and validating datasets, systematically selecting the optimal model for constrained real-time inference.</>,
-                        <>Deployed and profiled the v1 TRP Measurement System across diverse embedded Linux platforms (Raspberry Pi 4/5, Jetson Nano/Orin Nano, Orange Pi) to evaluate hardware feasibility and maximize computational efficiency.</>,
-                        <>Interfaced edge compute units with diverse microcontrollers (ESP32, ESP8266, STM32, Arduino, Portenta H7) to orchestrate robust low-latency sensor data acquisition and hardware actuation.</>
+                        <>Benchmarked multiple CNN-based classifiers, including ResNet, VGGNet, and EfficientNet variants, across iterative dataset and training updates to identify failure cases, expand the dataset with targeted samples and improve model accuracy under real-time inference constraints.</>,
+                        <>Deployed the evaluated models across multiple embedded Linux-based SBC platforms to identify the optimal hardware configuration for real-time performance, resource efficiency and computational reliability.</>,
+                        <>Developed a system-wide automated update mechanism from scratch, eliminating dependency on resource-heavy third-party solutions to improve reliability and reduce operational cost.</>
                     ]
                 }
             ]
