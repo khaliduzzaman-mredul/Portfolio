@@ -38,13 +38,13 @@ const About = () => {
                             AI & Robotics Engineer with 3+ years of experience architecting scalable, real-time computer vision systems and end-to-end machine learning pipelines.
                         </p>
                         <p>
-                            Specializing in the deployment of high-performance CV and NLP models, I have a proven track record of leading AI research and securing top-tier achievements in global robotics competitions. My core mission is to bridge the critical gap between advanced algorithmic research and production-ready, highly scalable software products.
+                            My interest primarily lies at the intersection of AI, Robotics and Embedded systems, where I turn applied research into deployable real-world products. I specialize in Computer Vision, NLP, Edge-AI, Sensor Fusion and Autonomous Systems, with proven experience leading industrial-grade research projects and a track record of national and international recognition in robotics competitions.
                         </p>
                         <p>
-                            Currently driving innovation as an AI/ML Research Engineer at the D2A2I Institute of Innovation and engineering sophisticated systems as a Full Stack AI Developer & Product Designer for Sonzaikan LTD, London.
+                            I currently work as a Research Engineer at D2A2I Institute of Innovation, AIUB, contributing to R&D projects across robotics and intelligent embedded systems. I began there as a Research Assistant, working on edge-AI model development, dataset refinement, and system update automation. I also work remotely at Sonzaikan Ltd. as a Product Design Engineer and Backend Developer for Tagore, a modern digital typewriter, contributing to its product design, device-level integration, and desktop deployment.
                         </p>
                         <p>
-                            I hold a B.Sc. in Computer Science Engineering (Major in CoE) from the American International University-Bangladesh (AIUB), where I was honored with the Dr. Anwarul Abedin Leadership Award (Chairman's Gold). I am also a certified CISCO CyberOps Associate.
+                            I graduated from American International University-Bangladesh (AIUB) with a B.Sc. in Computer Science and Engineering, majoring in Computer Engineering and received the university’s highest distinction, the Chairman’s Gold: Dr. Anwarul Abedin Leadership Award.
                         </p>
                     </div>
 
