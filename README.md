@@ -1,16 +1,80 @@
-# React + Vite
+<div align="center">
+  <h1>🚀 Khaliduzzaman Mredul | Personal Portfolio</h1>
+  <p>
+    <strong>A premium, modern portfolio built for an AI & Robotics Engineer.</strong>
+  </p>
+  <p>
+    <a href="https://khaliduzzaman-mredul.github.io/Portfolio/">View Live Demo</a>
+  </p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📖 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the source code for my personal portfolio. It is designed to showcase my experience, academic achievements, and projects across **AI & Machine Learning**, **Robotics & Intelligent Systems**, and **Full-Stack Development**. The site features a sleek deep-space UI, glassmorphism design elements, and smooth scroll animations.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Modern Glassmorphism UI**: High-end aesthetic using CSS variables, blurs, and transparent panels.
+- **Dynamic Animations**: Smooth scroll-triggered animations powered by `framer-motion`.
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile viewing.
+- **Theme Support**: Seamless Light/Dark mode toggling.
+- **Modular Architecture**: Component-based React structure for easy scaling and updates.
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React 18](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Vanilla CSS (CSS Modules & Global Variables)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: GitHub Pages
+
+## 🚀 Getting Started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/khaliduzzaman-mredul/Portfolio.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd Portfolio
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser to view the project.
+
+## 📦 Deployment
+
+This project is configured to be deployed automatically to GitHub Pages.
+
+To build and deploy the production version:
+```bash
+npm run deploy
+```
+
+## 👨‍💻 Author
+
+**Khaliduzzaman Mredul**
+- LinkedIn: [Khaliduzzaman Mredul](https://www.linkedin.com/in/khaliduzzaman-mredul/)
+- GitHub: [@khaliduzzaman-mredul](https://github.com/khaliduzzaman-mredul)
+
+---
+*If you find this repository helpful, feel free to give it a ⭐️!*
