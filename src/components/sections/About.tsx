@@ -1,24 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Cpu, Globe } from 'lucide-react';
+import { Brain, Bot, Cpu, Lightbulb } from 'lucide-react';
 import './About.css';
 
 const About = () => {
     const cards = [
         {
             icon: <Brain size={32} className="about-card-icon" />,
-            title: "AI & Machine Learning",
-            desc: "Architecting scalable computer vision and NLP models. Deploying SOTA models for real-world applications."
+            title: "AI & Machine Learning"
+        },
+        {
+            icon: <Bot size={32} className="about-card-icon" />,
+            title: "Robotics & Intelligent Systems"
         },
         {
             icon: <Cpu size={32} className="about-card-icon" />,
-            title: "Robotics & Hardware",
-            desc: "Experience with ROS2, Jetson Orin Nano, and Raspberry Pi. Designing smart sensor attachment modules."
+            title: "IoT & Embedded Systems"
         },
         {
-            icon: <Globe size={32} className="about-card-icon" />,
-            title: "Full-Stack Development",
-            desc: "Building robust backend architectures with FastAPI and engaging frontends using React and modern CSS."
+            icon: <Lightbulb size={32} className="about-card-icon" />,
+            title: "Research & Development"
         }
     ];
 
@@ -35,7 +36,7 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-text glass-panel">
                         <p className="lead-text">
-                            AI & Robotics Engineer with 3+ years of experience architecting scalable, real-time computer vision systems and end-to-end machine learning pipelines.
+                            Interested in applied R&D focused on Intelligent Systems and Robotics.
                         </p>
                         <p>
                             My interest primarily lies at the intersection of AI, Robotics and Embedded systems, where I turn applied research into deployable real-world products. I specialize in Computer Vision, NLP, Edge-AI, Sensor Fusion and Autonomous Systems, with proven experience leading industrial-grade research projects and a track record of national and international recognition in robotics competitions.
@@ -61,7 +62,6 @@ const About = () => {
                             >
                                 {card.icon}
                                 <h3>{card.title}</h3>
-                                <p>{card.desc}</p>
                             </motion.div>
                         ))}
                     </div>
