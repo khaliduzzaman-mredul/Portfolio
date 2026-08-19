@@ -20,7 +20,7 @@ const Hero = () => {
                         </h1>
                     </div>
                     <h2 className="hero-title">
-                        <span className="gradient-text">AI/ML || Computer Vision || NLP || Robotics || IoT</span>
+                        <span className="gradient-text">AI/ML &nbsp;•&nbsp; Computer Vision &nbsp;•&nbsp; NLP &nbsp;•&nbsp; Robotics &nbsp;•&nbsp; IoT</span>
                     </h2>
 
                     <p className="hero-description">
