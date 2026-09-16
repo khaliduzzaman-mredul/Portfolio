@@ -59,7 +59,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <a href="tel:+19172648926">+19172648926</a>
+                                    <a href="tel:+19172648926">+1 (917) 264-8926</a>
                                 </div>
                             </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4>Location</h4>
-                                    <p>Brooklyn New York United States</p>
+                                    <p>Brooklyn, New York, USA</p>
                                 </div>
                             </div>
                         </div>
