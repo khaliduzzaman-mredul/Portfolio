@@ -59,7 +59,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <a href="tel:+8801971170798">+8801971170798</a>
+                                    <a href="tel:+19172648926">+19172648926</a>
                                 </div>
                             </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4>Location</h4>
-                                    <p>Bashundhara R/A, Dhaka, Bangladesh</p>
+                                    <p>Brooklyn New York United States</p>
                                 </div>
                             </div>
                         </div>
