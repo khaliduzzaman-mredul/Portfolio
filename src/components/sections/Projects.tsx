@@ -1,45 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, BookOpen } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import './Projects.css';
 
 const Projects = () => {
     const projects = [
         {
-            title: "Optimizing Humanoid Arm Actuation: Motor Selection, Material Trade-offs, and Transition to Low-Inertia Tension-Amplified Mechanisms",
-            type: "Publication",
-            link: "https://www.researchgate.net/publication/405492378_Optimizing_Humanoid_Arm_Actuation_Motor_Selection_Material_Trade-offs_and_Transition_to_Low-Inertia_Tension-Amplified_Mechanisms",
-            desc: "Research evaluating BLDC motor selection, cycloidal drive reduction, and structural material trade-offs, transitioning toward low-inertia tension-amplified humanoid arm mechanisms.",
-            tags: ["Robotics", "Actuation", "Hardware"]
-        },
-        {
-            title: "IR-Based Automation System with Telegram Bot Integration",
-            type: "Publication",
-            link: "https://ieeexplore.ieee.org/document/10914456",
-            desc: "IEEE published research on automating environments using IR sensing coupled with remote Telegram bot management.",
-            tags: ["IoT", "Automation", "Python"]
-        },
-        {
             title: "Autonomous Visual & GPS Navigation System for Mars Rover",
-            type: "Project",
+            type: "Robotics",
             desc: "Developed an autonomous navigation system utilizing computer vision and GPS waypoints for traversal in simulated Mars-like terrains.",
             tags: ["Computer Vision", "ROS", "OpenCV"]
         },
         {
             title: "Voice Control System for Power wheelchair for people with physical disability",
-            type: "Project",
+            type: "Assistive Tech",
             desc: "Innovative mobility solution for the physically disabled, employing speech recognition to control wheelchair movements safely.",
             tags: ["NLP", "Embedded Systems", "Hardware"]
         },
         {
             title: "Vision based Abnormal Anomaly Detection System inside ATM Booth",
-            type: "Project",
+            type: "Computer Vision",
             desc: "Computer vision deployed anomaly detection system designed to identify and flag abnormal activities within ATM booths for enhanced security.",
             tags: ["Computer Vision", "Security", "AI"]
         },
         {
             title: "Autonomous solar panel cleaning system based on visual dust detection",
-            type: "Project",
+            type: "Robotics",
             desc: "Automated cleaning system that utilizes visual detection to assess dust levels on solar panels and trigger cleaning operations.",
             tags: ["Computer Vision", "Automation", "Robotics"]
         },
@@ -59,7 +45,7 @@ const Projects = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="section-title">Projects & Publications</h2>
+                <h2 className="section-title">Featured Projects</h2>
 
                 <div className="projects-grid">
                     {projects.map((proj, idx) => (
@@ -75,7 +61,7 @@ const Projects = () => {
                             <div className="project-card-inner">
                                 <div className="project-header">
                                     <div className="project-type-badge">
-                                        {proj.type === 'Publication' ? <BookOpen size={16} /> : <Github size={16} />}
+                                        <Github size={16} />
                                         {proj.type}
                                     </div>
                                     {proj.link && (
