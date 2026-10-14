@@ -87,6 +87,37 @@ const AcademicsAndAchievements = () => {
                             >
                                 <div className="acad-header">
                                     <GraduationCap size={24} className="acad-icon" />
+                                    <h3>Master of Science in Computer Engineering</h3>
+                                </div>
+                                <div className="acad-university">New York University, Tandon School of Engineering</div>
+
+                                <div className="acad-details-container">
+                                    <ul className="acad-details-list">
+                                        <li>
+                                            <span className="acad-detail-label">Location:</span>
+                                            <span className="acad-detail-value">New York, NY</span>
+                                        </li>
+                                        <li>
+                                            <span className="acad-detail-label">Major:</span>
+                                            <span className="acad-detail-value">Computer Engineering</span>
+                                        </li>
+                                        <li>
+                                            <span className="acad-detail-label">Expected Graduation:</span>
+                                            <span className="acad-detail-value">May 2028</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                className="academic-card glass-panel"
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                            >
+                                <div className="acad-header">
+                                    <GraduationCap size={24} className="acad-icon" />
                                     <h3>B.Sc. in Computer Science Engineering</h3>
                                 </div>
                                 <div className="acad-university">American International University-Bangladesh (AIUB)</div>
