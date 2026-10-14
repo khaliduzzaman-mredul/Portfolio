@@ -24,7 +24,7 @@ const Hero = () => {
                     </h2>
 
                     <p className="hero-description">
-                        AI and Robotics R&D Engineer with 3+ years of experience building intelligent systems across Computer Vision, NLP, Robotics, Embedded Systems and IoT. Focused on transforming research concepts into deployable real-world products, with proven achievements in national and international robotics competitions.
+                        AI and Robotics Enthusiast with 3+ years of professional experience building intelligent systems across Computer Vision, NLP, Robotics, Embedded Systems and IoT. Focused on transforming research concepts into deployable real-world products, with proven achievements in national and international robotics competitions.
                     </p>
 
                     <div className="hero-cta">
