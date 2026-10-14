@@ -6,6 +6,13 @@ import './Projects.css';
 const Projects = () => {
     const projects = [
         {
+            title: "Optimizing Humanoid Arm Actuation: Motor Selection, Material Trade-offs, and Transition to Low-Inertia Tension-Amplified Mechanisms",
+            type: "Publication",
+            link: "https://www.researchgate.net/publication/405492378_Optimizing_Humanoid_Arm_Actuation_Motor_Selection_Material_Trade-offs_and_Transition_to_Low-Inertia_Tension-Amplified_Mechanisms",
+            desc: "Research evaluating BLDC motor selection, cycloidal drive reduction, and structural material trade-offs, transitioning toward low-inertia tension-amplified humanoid arm mechanisms.",
+            tags: ["Robotics", "Actuation", "Hardware"]
+        },
+        {
             title: "IR-Based Automation System with Telegram Bot Integration",
             type: "Publication",
             link: "https://ieeexplore.ieee.org/document/10914456",
